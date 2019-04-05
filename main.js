@@ -1,5 +1,4 @@
 
-let places = [];
 
 const printToDom = (divId, textToPrint) => {
     const selectedDiv = document.getElementById(divId);
@@ -8,8 +7,11 @@ const printToDom = (divId, textToPrint) => {
 
 const domStringBuilder = (arrayToPrint) => {
     let domString = '';
+    domString += '<div class="container">'
+    domString += '<div class="row">'
     arrayToPrint.forEach((place) => {
-        domString += `<div class="card">`;
+        domString += `<div class="col-12 col-md-6 col-lg-4">`;
+        domString += '<div class="card">'
             domString += `<img src="${place.cityImage}" class="card-img-top">`;
                 domString += `<div class="card-body">`;
                 domString += `<h3 class="card-title">${place.cityName}</h4>`;
@@ -19,8 +21,11 @@ const domStringBuilder = (arrayToPrint) => {
                 domString += `<h5>${place.favoriteHotel}</h5>`;
                 domString += `<h5>${place.favoriteTouristAttraction}</h5>`;
                 domString += `</div>`;
-        domString += `</div>`;    
+            domString += `</div>`;    
+        domString += `</div>`;  
     });
+        domString += `</div>`;
+        domString += `</div>`;
         printToDom('faves', domString);
 };
 
