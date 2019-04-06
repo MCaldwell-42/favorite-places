@@ -3,7 +3,7 @@ Displays a series of cards stating my favorite cities and a few favorite things 
 
 # Screenshots
 
-![SortingHatScreenshot]()
+![SortingHatScreenshot](https://raw.githubusercontent.com/MCaldwell-42/favorite-places/master/faveplacesScreen.png)
 
 # Getting Started
 
