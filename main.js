@@ -16,10 +16,10 @@ const domStringBuilder = (arrayToPrint) => {
                 domString += `<div class="card-body">`;
                 domString += `<h3 class="card-title">${place.cityName}</h4>`;
                 domString += `<h4>${place.cityState}</h4>`;
-                domString += `<h5>${place.favoriteRestaurant}</h5>`;
-                domString += `<h5>${place.favoriteBar}</h5>`;
-                domString += `<h5>${place.favoriteHotel}</h5>`;
-                domString += `<h5>${place.favoriteTouristAttraction}</h5>`;
+                domString += `<h5>Good Restaurant: ${place.favoriteRestaurant}</h5>`;
+                domString += `<h5>Great Bar: ${place.favoriteBar}</h5>`;
+                domString += `<h5>Decent Hotel: ${place.favoriteHotel}</h5>`;
+                domString += `<h5>Something Fun To Do: ${place.favoriteTouristAttraction}</h5>`;
                 domString += `</div>`;
             domString += `</div>`;    
         domString += `</div>`;  
